@@ -1,0 +1,67 @@
+body{
+  background-image: url(ressources/_bg_light.png);
+}
+
+.navbar {
+	background-color: orange;
+	width: 100%;
+	font-size: 1.5em;
+	margin: -1px ;
+	font-family: Texte;
+
+  & .active{
+  	text-decoration: underline;
+  }
+  & a{
+  	color: white;
+  }
+}
+
+@mixin circle($size, $border, $margin, $color){
+  height: $size;
+  width: $size;
+  background-color: transparent;
+  border: $border solid;
+  border-radius: 50%;
+  margin-left: $margin;
+  margin-right: $margin;
+  color: $color
+}
+
+@for $i from 1 through 6{
+  .circle#{$i}{
+  @include circle($i *0.75em, $i *0.07em, $i * -0.15em, #3b3d3b);
+  float:left;
+  margin-top: $i * -0.35em;
+  }
+}
+
+h1{
+  &::before, &::after{
+    content: "    ";
+    white-space: pre;
+    @include circle(0.5em, 0.10em, 0.05em, orange);
+  }
+}
+
+h3{
+  &::before{
+    content: "    ";
+    white-space: pre;
+    display: inline-block;
+    @include circle(5em, 0.25em, 0.35em, gold);
+
+  }
+}
+
+h3, h1 {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  text-align: center;
+}
+
+.circle{
+  margin-top: 5em;
+  margin-left: 45%;
+  margin-right: auto;
+}

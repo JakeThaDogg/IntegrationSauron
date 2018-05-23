@@ -1,0 +1,295 @@
+/* Fonts */
+
+
+@font-face{
+	font-family: Texte;
+	src: url(ressources/partybusiness.ttf);
+}
+
+@font-face{
+	font-family: Titre;
+	src: url(ressources/anicm___.ttf);
+}
+
+@font-face{
+	font-family: Symbole;
+	src: url(ressources/tngani.ttf);
+}
+
+/* Header's sections/article */
+
+h2{
+	font-family: "Titre";
+	font-size: 1.5em;
+	text-align: center;
+}
+
+h2:before{
+	content: "z";
+	font-family: "Symbole";
+	font-size: 1.5em;
+	color: orange;
+}
+
+h2:after{
+	content: "z";
+	font-family: "Symbole";
+	font-size: 1.5em;
+	color: orange;
+}
+
+/* Slider */
+
+div.slider{
+	width:100%;
+	max-width: 100%;
+	overflow: hidden;
+	max-height: 100%;
+}
+
+div .carousel-caption{
+	font-family: Texte;
+}
+
+div .carousel-caption h3{
+	font-size: 30px;
+	padding-bottom: 20%;
+
+}
+
+div .carousel-caption span{
+	padding-left: 2em;
+
+}
+
+.carousel-inner img {
+	max-height: 55vh;
+	width: 100%;
+
+}
+
+.carousel-caption h2 {
+	font-size: 30px;
+	padding: 2.5em;
+	text-align: justify;
+	font-family: Texte;
+
+}
+
+.carousel-caption span{
+	text-align: right;
+}
+
+/* Navbar */
+
+.navbar {
+	background-color: orange;
+	width: 100%;
+	font-size: 1.5em;
+	margin: -1px ;
+	font-family: Texte;
+
+}
+
+#navbar .active{
+	text-decoration: underline;
+}
+
+
+#navbar a{
+	color: white;
+}
+
+/* Separator and thumbnail responsivity */
+
+@media screen and (min-width: 768px){
+	.separator{
+		height: 26px;
+		margin: 0 8px;
+		top: 11px;
+		border-left: 1px solid white;
+		border-right: 1px solid white;
+	}
+
+	.Fellows figure img {
+		min-height: 25em;
+	}
+
+}
+
+/* Body */
+
+body{
+	margin:auto;
+	max-width: 80%;
+}
+
+/* Thumbnail */
+
+.Fellows{
+	background-image: url("ressources/_bg_light.png");
+	margin-top: -1.40em;
+	padding-bottom: 3em;
+}
+
+.Fellows h2{
+	text-align: center;
+	padding-top: 0.75em
+
+}
+
+.Fellows figure{
+	background-color: black;
+	height: 30em;
+	position: relative;
+	width: 20em;
+	margin-left: 1.75em;
+	max-width: 80%
+	padding-bottom: 0;
+}
+
+.Fellows figure img {
+	border: 0.65em solid black;
+ 	opacity: 0.5;
+	height: 38vmin;
+	width: 38vmax;
+}
+
+
+
+.Fellows figure .caption{
+	font-size: 2em;
+	color: white;
+	text-align: left, justify;
+	font-family: Texte;
+}
+
+
+.Name{
+	color: white;
+	font-size: 60px;
+	position: absolute;
+	top: 2.25em;
+	width: 100%;
+	font-family: Texte;
+}
+
+.Fellows figure .Dead{
+	position: absolute;
+	top: 5%;
+	font-size: 2.5em;
+	width: 100%;
+	left: 0;
+	color: darkorange;
+	text-decoration: line-through;
+	font-family: Texte;
+}
+
+.Reward{
+	width: 75%;
+	position: absolute;
+	font-size: 25px;
+	background-color: white;
+	border-radius: 10px;
+	text-align: center;
+	opacity:0.75;
+	display: table-cell;
+	vertical-align: middle;
+	top: 5%;
+	left: 12.5%;
+	font-family: Texte;
+}
+
+.Reward span{
+	color: darkorange;
+	font-family: Texte;
+}
+
+.Fellows figure img:hover{
+	opacity: 1;
+}
+
+.Fellows figure:hover .Reward{
+	visibility: hidden;
+
+}
+
+.Fellows figure:hover .Name{
+	font-size: 40px;
+	position: absolute;
+	top: 60%;
+	width: 100%;
+}
+
+.Fellows .btn-group-lg{
+	margin-bottom: 2.5em;
+	margin-top: 1em;
+	font-family: Titre;
+}
+
+.Fellows .btn-group-lg .active {
+	border-bottom: 2.5px solid orange;
+	color: orange;
+	box-shadow: none;
+	border-radius: 3px;
+
+}
+
+.Fellows .btn-group-lg .active:before{
+	content: "g";
+	font-family: "Symbole";
+	font-size: 1.5em;
+	color: orange;
+	margin-right: 0.75em;
+
+}
+
+.Fellows .btn-group-lg .active:after{
+	content: "g";
+	font-family: "Symbole";
+	font-size: 1.5em;
+	color: orange;
+	margin-left: 0.75em;
+}
+
+/* Other Stuff */
+
+.capture{
+	background-image: url(ressources/_bg_dark.png);
+	padding-top: 1em;
+	margin-top: -3.25em;
+
+}
+
+.capture h2{
+	color: white;
+}
+
+.btn{
+	border: none;
+	background: none;
+}
+
+hr {
+	display: block;
+	width: 50%;
+	border-bottom: 2.5px solid orange;
+ 	z-index: 1;
+ 	position: relative;
+ 	top: -1.58em;
+
+}
+
+.Cont{
+	background-color: white;
+	color: orange;
+	border:;
+	padding: 16px 40px;
+	font-family: Texte;
+	font-size: 2em;
+}
+
+.BestH{
+	background-image: url(ressources/_bg_light.png);
+	margin-top: -3em;
+}

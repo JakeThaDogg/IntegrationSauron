@@ -1,0 +1,134 @@
+body {
+  background-image: url(ressources/_bg_light.png);
+}
+
+.navbar {
+  background-color: orange;
+  width: 100%;
+  font-size: 1.5em;
+  margin: -1px;
+  font-family: Texte;
+}
+.navbar .active {
+  text-decoration: underline;
+}
+.navbar a {
+  color: white;
+}
+
+.circle1 {
+  height: 0.75em;
+  width: 0.75em;
+  background-color: transparent;
+  border: 0.07em solid;
+  border-radius: 50%;
+  margin-left: -0.15em;
+  margin-right: -0.15em;
+  color: #3b3d3b;
+  float: left;
+  margin-top: -0.35em;
+}
+
+.circle2 {
+  height: 1.5em;
+  width: 1.5em;
+  background-color: transparent;
+  border: 0.14em solid;
+  border-radius: 50%;
+  margin-left: -0.3em;
+  margin-right: -0.3em;
+  color: #3b3d3b;
+  float: left;
+  margin-top: -0.7em;
+}
+
+.circle3 {
+  height: 2.25em;
+  width: 2.25em;
+  background-color: transparent;
+  border: 0.21em solid;
+  border-radius: 50%;
+  margin-left: -0.45em;
+  margin-right: -0.45em;
+  color: #3b3d3b;
+  float: left;
+  margin-top: -1.05em;
+}
+
+.circle4 {
+  height: 3em;
+  width: 3em;
+  background-color: transparent;
+  border: 0.28em solid;
+  border-radius: 50%;
+  margin-left: -0.6em;
+  margin-right: -0.6em;
+  color: #3b3d3b;
+  float: left;
+  margin-top: -1.4em;
+}
+
+.circle5 {
+  height: 3.75em;
+  width: 3.75em;
+  background-color: transparent;
+  border: 0.35em solid;
+  border-radius: 50%;
+  margin-left: -0.75em;
+  margin-right: -0.75em;
+  color: #3b3d3b;
+  float: left;
+  margin-top: -1.75em;
+}
+
+.circle6 {
+  height: 4.5em;
+  width: 4.5em;
+  background-color: transparent;
+  border: 0.42em solid;
+  border-radius: 50%;
+  margin-left: -0.9em;
+  margin-right: -0.9em;
+  color: #3b3d3b;
+  float: left;
+  margin-top: -2.1em;
+}
+
+h1::before, h1::after {
+  content: "    ";
+  white-space: pre;
+  height: 0.5em;
+  width: 0.5em;
+  background-color: transparent;
+  border: 0.1em solid;
+  border-radius: 50%;
+  margin-left: 0.05em;
+  margin-right: 0.05em;
+  color: orange;
+}
+
+h3::before {
+  content: "    ";
+  white-space: pre;
+  display: inline-block;
+  height: 5em;
+  width: 5em;
+  background-color: transparent;
+  border: 0.25em solid;
+  border-radius: 50%;
+  margin-left: 0.35em;
+  margin-right: 0.35em;
+  color: gold;
+}
+
+h3, h1 {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  text-align: center;
+}
+
+.circle {
+  margin-top: 5em;
+  margin-left: 45%;
+  margin-right: auto;
+}
